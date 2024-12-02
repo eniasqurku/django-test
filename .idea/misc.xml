@@ -1,4 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.7 (padam-django-tech-test-a1dIvVpo)" project-jdk-type="Python SDK" />
+  <component name="Black">
+    <option name="enabledOnSave" value="true" />
+    <option name="pathToExecutable" value="$USER_HOME$/.local/bin/black" />
+    <option name="sdkName" value="Python 3.10 (django-test)" />
+  </component>
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.10 (django-test)" project-jdk-type="Python SDK" />
 </project>

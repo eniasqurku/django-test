@@ -9,18 +9,22 @@ class Migration(migrations.Migration):
 
     dependencies = [
         migrations.swappable_dependency(settings.AUTH_USER_MODEL),
-        ('fleet', '0001_initial'),
+        ("fleet", "0001_initial"),
     ]
 
     operations = [
         migrations.RenameField(
-            model_name='bus',
-            old_name='licence_place',
-            new_name='licence_plate',
+            model_name="bus",
+            old_name="licence_place",
+            new_name="licence_plate",
         ),
         migrations.AlterField(
-            model_name='driver',
-            name='user',
-            field=models.OneToOneField(on_delete=django.db.models.deletion.CASCADE, related_name='driver', to=settings.AUTH_USER_MODEL),
+            model_name="driver",
+            name="user",
+            field=models.OneToOneField(
+                on_delete=django.db.models.deletion.CASCADE,
+                related_name="driver",
+                to=settings.AUTH_USER_MODEL,
+            ),
         ),
     ]

@@ -6,3 +6,5 @@ ipython==8.29.0
 
 factory-boy==3.2.0
 Faker==8.10.1
+pytest-django==4.9.0
+django-admin-sortable2==2.2.4

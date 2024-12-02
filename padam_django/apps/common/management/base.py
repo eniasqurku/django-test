@@ -9,16 +9,16 @@ class CreateDataBaseCommand(BaseCommand):
 
     def add_arguments(self, parser):
         parser.add_argument(
-            '--number',
-            '-n',
-            dest='number',
+            "--number",
+            "-n",
+            dest="number",
             default=5,
             type=int,
-            help='Specify the number of items to create',
+            help="Specify the number of items to create",
         )
 
     def _init_options(self, **options):
-        self.number = options['number']
+        self.number = options["number"]
 
     def handle(self, *args, **options):
         self._init_options(**options)
